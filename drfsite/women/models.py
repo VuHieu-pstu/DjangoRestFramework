@@ -1,6 +1,7 @@
 from django.db import models
 
 class Women(models.Model):
+    objects = None
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     time_create = models.DateTimeField(auto_now_add=True)
